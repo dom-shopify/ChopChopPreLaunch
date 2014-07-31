@@ -39,6 +39,10 @@ label {
     margin-right: auto;
     padding-top: 2%;
     padding-bottom: 2%
+
+  }
+.pure-img-responsive.delivery_truck {
+    margin-top: 0px;
 }
 
 /*
@@ -358,5 +362,10 @@ a.pure-button-primary {
     /* We increase the header font size even more */
     .splash-head {
         font-size: 300%;
+    }
+
+    .splash {
+        width: 50%;
+        height: 55%;
     }
 }
