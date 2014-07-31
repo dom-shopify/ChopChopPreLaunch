@@ -184,8 +184,8 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background-image: url('https://dl.dropboxusercontent.com/u/27636669/chopchop-bg-m.jpg');
-    /*background: #1f8dd6 ;*/ /* was #1f8dd6 now: url(img/common/bg-chop.jpg)*/
+/*    background-image: url('https://dl.dropboxusercontent.com/u/27636669/chopchop-bg-m.jpg');
+*/    background: #1f8dd6 ; /* was #1f8dd6 now: url(img/common/bg-chop.jpg)*/
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
