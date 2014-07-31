@@ -33,7 +33,7 @@ label {
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
-    margin-top: -90px;
+   /* margin-top: -90px;*/
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -43,6 +43,7 @@ label {
   }
 .pure-img-responsive.delivery_truck {
     margin-top: 0px;
+
 }
 
 /*
@@ -360,12 +361,348 @@ a.pure-button-primary {
  */
 @media (min-width: 78em) {
     /* We increase the header font size even more */
-    .splash-head {
-        font-size: 300%;
+
+
+   * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    line-height: 1.7em;
+    color: #7f8c8d;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+    margin: 0 0 0 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+    margin-top: -90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 2%
+
+  }
+.pure-img-responsive.delivery_truck {
+    margin-top: 0px;
+    border: none;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+.l-box {
+    padding: 1em;
+}
+
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-center {
+    text-align: center;
+}
+
+
+
+/*
+ * -- PURE FORM STYLES --
+ * Style the form inputs and labels
+ */
+.pure-form label {
+    margin: 1em 0 0;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.pure-form input[type] {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.pure-form input[type].comments {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+    padding-bottom: 70px;
+}
+
+/*
+ * -- PURE BUTTON STYLES --
+ * I want my pure-button elements to look a little different
+ */
+.pure-button {
+    background-color: #62ac2b;
+    color: white;
+    /*padding: 0.5em 2em;*/
+    border-radius: 5px;
+    padding: 1em 1em 1em 1em;
+    margin-right: 1em;
+    margin-left: 0em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+a.pure-button-primary {
+   /* background: white;
+    color: #1f8dd6;
+    border-radius: 5px;
+    font-size: 120%;*/
+    background-color: #62ac2b;
+    color: white;
+    /*padding: 0.5em 2em;*/
+    border-radius: 5px;
+    padding: .8em .8em ..8em ..8em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 800;
+    font-size: 22px;
+
+}
+
+
+a.pure-button-primary:hover {
+    background-color: #f5ea37;
+    color: #000; 
+    /*font-weight: 1000;*/
+    /*font-style: italic; */ 
+    padding: .8em .8em ..8em ..8em; 
+     border-radius: 5px;
+    padding: .8em .8em ..8em ..8em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+
+}
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+
+}
+.home-menu.pure-menu-open {
+    background-color: transparent !important;
+    border-bottom: 0;
+
+}
+
+#scrolling-header  not-transparent {
+    background-color:  #62ac2b;
+
+}
+
+.home-menu.pure-menu-open.not-transparent {
+    background-color:  #34495e;
+}  
+
+}
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none !important;
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+    border-bottom-color: rgb(0,0,0,0);
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+
+}
+
+#navbar {
+    border-bottom: none;
+}
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #6FBEF3;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+
+.splash-container {
+    background-image: url('https://dl.dropboxusercontent.com/u/27636669/chopchop-bg.jpg');
+    /*background: #1f8dd6 ;*/ /* was #1f8dd6 now: url(img/common/bg-chop.jpg)*/
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    background-color: rgba(0,0,0, .65);
+    width: 50%;
+    height: 55%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding-bottom: 4em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+
+}
+
+/* This is the main heading that appears on the blue section */
+.splash-head {
+    font-size: 300%;
+    font-weight: bold;
+    color: white;
+    border: none; /*3px solid white;*/
+    /*padding: 1em 1.6em;*/
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+    padding-bottom: 1em;
+    font-weight: 700;
+
+        
+    /*padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;*/
+}
+
+.splash-head span {
+        font-weight: 200;
+        font-style: italic;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+   /* opacity: 0.8;*/
+    margin: 0em 0;
+    font-size: 22px;
+}
+
+.splash-subhead span {
+    display: block;
+    font-style: italic;
+    font-weight: 600;    
+}
+
+/*
+ * -- CONTENT STYLES --
+ * This represents the content area (everything below the blue section)
+ */
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 5;
+    background: white;
+
+}
+
+/* This is the class used for the main content headers (<h2>) */
+.content-head {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+    font-size: 30px;
+}
+
+/* This is a modifier class used when the content-head is inside a ribbon */
+.content-head-ribbon {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* This is the class used for the content sub-headers (<h3>) */
+.content-subhead {
+    color: #62ac2b;
+}
+    .content-subhead i {
+        margin-right: 7px;
     }
 
-    .splash {
-        width: 50%;
-        height: 55%;
-    }
+/* This is the class used for the dark-background areas. */
+.ribbon {
+    background: #62ac2b;
+    color: #aaa;
+}
+
+.ribbon-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* This is the class used for the footer */
+.footer {
+    background: #111;
+}
+
+}
 }
