@@ -360,6 +360,10 @@ a.pure-button-primary.office {
     font-weight: 600;    
 }
 
+.splash-subhead.office span {
+    display: none;
+}
+
 /*
  * -- CONTENT STYLES --
  * This represents the content area (everything below the blue section)
@@ -889,8 +893,10 @@ a.pure-button-primary:hover {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
 
-
+.splash-subhead.office span {
+    display: inline;
 }
 
 /*
