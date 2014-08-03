@@ -293,6 +293,15 @@ a.pure-button-primary.office {
 
 }
 
+.splash-container.home {
+    background-image: url('../../img/common/home_delivery.jpg');
+    background-position-y: -60px;
+    background-position-x: center;
+    background-size: 260%;
+
+}
+
+
 .splash {
     /* absolute center .splash within .splash-container */
     background-color: rgba(0,0,0, .68);
@@ -552,6 +561,13 @@ label {
 
 }
 
+.l-box-lrg.office-answers {
+    padding-left: 6em;
+    padding-right: 12em;
+    border-bottom: 0px;
+    font-size: 16px;
+}
+
 .is-center {
     text-align: center;
 }
@@ -795,6 +811,22 @@ a.pure-button-primary:hover {
     top: 0;
     left: 0;
     position: fixed !important;
+}
+
+.splash-container.home {
+    background-image: url('../../img/common/home_delivery.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 100%;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 100%%;
+    top:  0px;
+    left: 0;
+    /*position: fixed !important;*/
 }
 
 .splash {
