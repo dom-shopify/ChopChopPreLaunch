@@ -269,7 +269,7 @@ a.pure-button-primary.office {
  */
 
 .splash-container {
-    background-image: url('https://dl.dropboxusercontent.com/u/27636669/chopchop-bg.jpg');
+    background-image: url('../../img/common/chopchop-bg.jpg');
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -285,7 +285,7 @@ a.pure-button-primary.office {
 }
 
 .splash-container.office {
-    background-image: url('https://dl.dropboxusercontent.com/u/27636669/Depositphotos_25045763_original.jpg');
+    background-image: url('../../img/common/chop_office_bg.jpg');
     background-position-y: -60px;
     background-position-x: center;
     background-size: 260%;
@@ -763,7 +763,7 @@ a.pure-button-primary:hover {
  */
 
 .splash-container {
-    background-image: url('https://dl.dropboxusercontent.com/u/27636669/chopchop-bg.jpg');
+    background-image: url('../../img/common/chopchop-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -778,7 +778,7 @@ a.pure-button-primary:hover {
 }
 
 .splash-container.office {
-    background-image: url('https://dl.dropboxusercontent.com/u/27636669/Depositphotos_25045763_original.jpg');
+    background-image: url('../../img/common/chop_office_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -796,7 +796,7 @@ a.pure-button-primary:hover {
     /* absolute center .splash within .splash-container */
     background-color: rgba(0,0,0, .65);
     width: 50%;
-    height: 55%;
+    height: 48%;
     margin: auto;
     position: absolute;
     top: 100px; left: 0; bottom: 0; right: 0;
