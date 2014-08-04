@@ -202,6 +202,23 @@ a.pure-button-primary.office {
     position: center;
 }
 
+#mc-embedded-subscribe {
+    background-color: #f5ea37;;
+    color: #000;
+    /*padding: 0.5em 2em;*/
+    border-radius: 5px;
+    padding: 1.5em 4em 1.5em 3em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 800;
+    font-size: 18px;
+    /*position: center;*/
+    text-align: center;
+
+}
+
 /*
  * -- MENU STYLES --
  * I want to customize how my .pure-menu looks at the top of the page
@@ -329,8 +346,29 @@ a.pure-button-primary.office {
     padding-top: 1em;
 }
 
+.splash.home {
+    top: -42%;
+    height: 65%;
+    padding-top: 1em;
+}
+
 .pure-img-responsive.office {
-    width: 70%;
+    /*width: 70%*/;
+    width: 20%;
+    bottom: -85%;
+    margin-right: 0;
+    position: relative;
+    /* top: 90%; */
+}
+
+.pure-img-responsive.home {
+    /* width: 70%; */
+    width: 20%;
+    bottom: 10%;
+    margin-left: 80%;
+    position: absolute;
+    z-index: 200;
+    /* top: 90%; */
 }
 /* This is the main heading that appears on the blue section */
 .splash-head {
@@ -658,7 +696,7 @@ label {
     /*padding: 0.5em 2em;*/
     border-radius: 5px;
     padding: 1em 4em 1em 4em;
-    margin-right: auto;
+    margin-right: 2em;
     margin-left: auto;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -851,22 +889,29 @@ a.pure-button-primary:hover {
 .splash.office {
     /* absolute center .splash within .splash-container */
     background-color: rgba(0,0,0, .65);
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 42%;
     margin-left: 5%;
     position: absolute;
-    top: 200px; left: 0; bottom: 0; right: 0;
+    top: 40%; left: 10%; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
     padding-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
 }
 
+.splash.home {
+    top: -42%;
+    width: 42%;
+    height: 36%;
+    margin-left: 5%;
+}
+    
 
 
 /* This is the main heading that appears on the blue section */
@@ -896,9 +941,10 @@ a.pure-button-primary:hover {
 
 .splash-head.office {
     text-align: center;
-    margin-top: -3%;
+    margin-top: .5em;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: auto;
     padding-bottom: .3em;
 }
 
@@ -988,6 +1034,14 @@ a.pure-button-primary:hover {
     font-size: 18px;
     font-weight: 400;
 }
+
+.ribbon-text.home {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 4em 0 4em;
+}
+
 
 /* This is the class used for the footer */
 .footer {
