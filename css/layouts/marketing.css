@@ -17,7 +17,8 @@ body {
     color: #7f8c8d;
     font-size: 13px;
     font-family: 'Lato', sans-serif;
-    color: #fff;
+    font-size: 16px;
+    
       
 }
 
@@ -39,22 +40,9 @@ label {
 }
 
 .pure-img-responsive {
- /* width: 100%; 
-margin-top: 0;
-margin-left: auto;
-margin-right: auto;*/ 
-/* display: block; */
-/* position: relative; */
-
-/* padding-top: 2%; */
-/* padding-bottom: 2%; */
-/* width: 5000px; */
-  
-/* background-size: 500%; */
-
-max-width: 40%;
+max-width: 80%;
 height: auto;
-margin-top: -38px;
+margin-top: -3%;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -198,10 +186,9 @@ a.pure-button-primary.office {
 }
 
 .pure-form.office input[type] {
-    width: 100%;
+    width: 85%;
     border: 2px solid #ddd;
     box-shadow: none;
-    width: 90%;
      padding: 1em;
     /*padding: 1.5em 2em 1.5em 2em;*/
     font-size: 14px;
@@ -239,7 +226,7 @@ a.pure-button-primary.office {
     font-size: 18px;
     /* position: center; */
     text-align: center;
-    width: 50%;
+    width: 70%;
 
 }
 
@@ -316,7 +303,7 @@ a.pure-button-primary.office {
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 88%;
+    height: auto;
     background-position-x: 30%;
     background-size: 280%;
     background-repeat: no-repeat;
@@ -344,25 +331,38 @@ a.pure-button-primary.office {
 
 
 .splash {
-    /* absolute center .splash within .splash-container */
-    background-color: rgba(0,0,0, .68);
+    background-color: rgba(0,0,0, .65);
     width: auto;
     height: auto;
-    margin: 1em;
-    /*margin: auto;*/
-    position: absolute;
-    top: 60px; left: 0; bottom: 0; right: 0;
+    margin-top: -4%;
+    position: relative;
+    /*top: 3%;*/
+    left: 0;
+    bottom: 0%;
+    right: 0;
     text-align: center;
     text-transform: uppercase;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    padding-bottom: 4em;
+    padding-bottom: 1em;
     padding-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
 
+    .content-wrapper {
+        position: absolute;
+        top: 87%;
+        width: 100%;
+        min-height: 12%;
+        z-index: 5;
+        background: white;
 
+}
 }
 
 .splash.office {
@@ -397,7 +397,7 @@ a.pure-button-primary.office {
 }
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     border: none; /*3px solid white;*/
@@ -436,6 +436,9 @@ a.pure-button-primary.office {
     display: none;
 }
 
+.container-bottom{
+    padding: 2em;
+}
 /*
  * -- CONTENT STYLES --
  * This represents the content area (everything below the blue section)
@@ -443,7 +446,7 @@ a.pure-button-primary.office {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    top: 120%;
     width: 100%;
     min-height: 12%;
     z-index: 5;
@@ -491,139 +494,11 @@ a.pure-button-primary.office {
     background: #111;
 }
 
-#how-it-works {
-    
-}
-}
-
-@media (max-height: 48em) {
-
-
-}
-/*
- * -- TABLET (AND UP) MEDIA QUERIES --
- * On tablets and other medium-sized devices, we want to customize some
- * of the mobile styles.
- */
-
-@media (min-width: 48em) {
-
-    /* We increase the body font size */
-    body {
-        font-size: 16px;
-    }
-    /* We want to give the content area some more padding */
-    
-    .pure-img-responsive {
-        /*width: 60%;
-        top: -10%;
-        margin-top: auto;
-        margin-left: auto;
-        margin-right: auto;*/
-        max-width: 40%;
-        height: auto;
-        margin-top: -38px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 2%;
-        padding-bottom: 2%;
-
-  }
-
-  .splash {
-   /* background-color: rgba(0,0,0, .68);
-    width: 45%;
-    height: auto;
-    margin: auto;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    padding-bottom: 4em;
-    padding-top: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
-
-        .content {
-            padding: 1em;
-    }*/
-    background-color: rgba(0,0,0, .65);
-    width: auto;
-    height: auto;
-    margin: 10%;
-    position: relative;
-    top: 3%;
-    left: 0;
-    bottom: 0%;
-    right: 0;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    padding-bottom: 1em;
-    padding-top: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
-
-    .content-wrapper {
-        position: absolute;
-        top: 87%;
-        width: 100%;
-        min-height: 12%;
-        z-index: 5;
-        background: white;
-
-}
-
-    /* We can align the menu header to the left, but float the
-    menu items to the right. */
-    .home-menu {
-        text-align: left;
-    }
-        .home-menu ul {
-            float: right;
-        }
-
-    /* We increase the height of the splash-container */
-/*    .splash-container {
-        height: 500px;
-    }*/
-
-    /* We decrease the width of the .splash, since we have more width
-    to work with */
-    .splash {
-        width: 50%;
-        height: 55%;
-    }
-
-    .splash-head {
-        font-size: 250%;
-    }
-
-
-    /* We remove the border-separator assigned to .l-box-lrg */
-    .l-box-lrg {
-        border: none;
-    }
-
-}
 
 
 
-/*
- * -- DESKTOP (AND UP) MEDIA QUERIES --
- * On desktops and other large devices, we want to over-ride some
- * of the mobile and tablet styles.
- */
-@media (min-width: 72em) {
+/*MEDIA FOR BIGGER DEVICES*/
+ @media (min-width: 60em) {
     /* We increase the header font size even more */
 
 
@@ -656,10 +531,16 @@ label {
     font-family: 'Lato', sans-serif;
 }
 
+#mc-embedded-subscribe {
+   
+    width: 40%;
+
+}
+
 .pure-img-responsive {
     max-width: 40%;
     height: auto;
-    margin-top: -38px;
+    margin-top: -3%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -747,10 +628,9 @@ label {
 }
 
 .pure-form.office input[type] {
-    width: 70%;
+    width: 95%;
     border: 2px solid #ddd;
     box-shadow: none;
-    width: 90%;
     padding: 1em;
     /*padding: 1.5em 2em 1.5em 2em;*/
     font-size: 16px;
@@ -759,19 +639,31 @@ label {
 
 }
 
-/*.fname {
-    width: 25%
+.fname {
+    display: inline;
+    width: 35%
 }
 .email {
-    width: 50%;
+    display: inline;
+    width: 65%;
 }
 
-*/
 
-notify_button {
-    background-color: #fff;  /*#f5ea37*/
+/*
+#mce-FNAME {
+    width: 25%;
+    display: inline;
+}
+
+#mce-EMAIL {
+    display: inline;
+    width: 75%;
+}*/
+
+/*notify_button {
+    background-color: #fff;  
     color: #000;
-    /*padding: 0.5em 2em;*/
+    padding: 0.5em 2em;
     border-radius: 5px;
     padding: 1em 4em 1em 4em;
     margin-right: 2em;
@@ -781,7 +673,7 @@ notify_button {
     font-weight: 800;
     font-size: 22px;
     position: center;
-}
+}*/
 .pure-form input[type].comments {
     border: 2px solid #ddd;
     box-shadow: none;
@@ -1000,29 +892,12 @@ a.pure-button-primary:hover {
 }
 
 .splash {
-    /* absolute center .splash within .splash-container */
-    /*background-color: rgba(0,0,0, .65);
-    width: 50%;
-    height: 48%;
-    margin: auto;
-    position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    padding-bottom: 4em;
-    padding-top: 2em;
-    padding-left: 1em;
-    padding-right: 1em;*/
-
     background-color: rgba(0,0,0, .65);
     width: auto;
     height: auto;
-    margin: 10%;
+    margin-top: -4%;
     position: relative;
-    top: 3%;
+    /*top: 3%;*/
     left: 0;
     bottom: 0%;
     right: 0;
@@ -1035,6 +910,10 @@ a.pure-button-primary:hover {
     padding-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 
     .content-wrapper {
         position: absolute;
@@ -1210,4 +1089,7 @@ a.pure-button-primary:hover {
 }
 
 }
+
+
+
 
