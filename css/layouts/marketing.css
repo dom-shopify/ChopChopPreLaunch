@@ -15,9 +15,8 @@
 body {
     line-height: 1.7em;
     color: #7f8c8d;
-    font-size: 13px;
+    font-size: 10px;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
     
       
 }
@@ -397,7 +396,7 @@ a.pure-button-primary.office {
 }
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 40px;
+    font-size: 16px;
     font-weight: bold;
     color: white;
     border: none; /*3px solid white;*/
@@ -501,8 +500,7 @@ a.pure-button-primary.office {
  @media (min-width: 60em) {
     /* We increase the header font size even more */
 
-
-   * {
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -515,8 +513,15 @@ a.pure-button-primary.office {
 body {
     line-height: 1.7em;
     color: #7f8c8d;
-    font-size: 13px;
+    font-size: 16px;
     font-family: 'Lato', sans-serif;
+    
+      
+}
+
+.q_title {
+    font-weight: 600;
+    color: #62ac2b;
 }
 
 h1,
@@ -530,6 +535,9 @@ label {
     margin: 0 0 0 0;
     font-family: 'Lato', sans-serif;
 }
+
+  
+
 
 #mc-embedded-subscribe {
    
@@ -956,7 +964,7 @@ a.pure-button-primary:hover {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 300%;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     border: none; /*3px solid white;*/
