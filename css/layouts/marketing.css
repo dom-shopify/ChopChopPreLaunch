@@ -21,6 +21,10 @@ body {
       
 }
 
+menu, ol, ul {
+padding: 0 0 0 0px;
+}
+
 .q_title {
     font-weight: 600;
     color: #62ac2b;
@@ -38,6 +42,11 @@ label {
     font-family: 'Lato', sans-serif;
 }
 
+.content-head { text-align: center;}
+.content-head-ribbon { text-align: center;}
+.ribbon-text { text-align: center;}
+
+
 .pure-img-responsive {
 max-width: 80%;
 height: auto;
@@ -49,7 +58,7 @@ padding-top: 2%;
 padding-bottom: 2%;
 
   }
-.pure-img-responsive.delivery_truck {
+#delivery_truck {
     max-width: 100%;
     /* zoom: 2; */
     height: auto;
@@ -63,6 +72,12 @@ padding-bottom: 2%;
 
 }
 
+#form25 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
@@ -74,9 +89,12 @@ padding-bottom: 2%;
 .l-box-lrg {
     padding: 2em;
     border-bottom: 0px;
-
-
 }
+
+#ask-last {
+    background-color: #62ac2b;
+}
+
 
 .l-box-lrg.office-r {
     padding: 1em;
@@ -89,6 +107,154 @@ padding-bottom: 2%;
     text-align: center;
 }
 
+.lower-signup-container {
+    background-color: transparent;
+    border-radius: 10px;
+     display: block;
+    border: none;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+   
+    
+}
+
+/*
+ * -- TOP SIGNUP FORM MOBILE --
+ */
+.notranslate {
+    list-style: none; 
+    margin-top: 2%;
+}
+
+.buttons {list-style: none;}
+
+#saveForm {
+    list-style: none;
+    background-color: #F5EA37;
+    color: #000;
+    /* padding: 0.5em 2em; */
+    border-radius: 5px;
+    padding: .5em 1em .5em 1em;
+    margin: 0 auto; 
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 18px;
+    /* position: center; */
+    text-align: center;
+    width: 50%; 
+}
+
+.signup-middle-page {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    padding: 1em;
+    width: 96%;
+    margin-top: 0.5em;
+    display: block;
+    margin: 0 auto;
+    
+    
+}
+
+/*#Field3 {
+    margin-right: 2em;
+    margin-left: 2em;
+
+}*/
+#mc-embedded-subscribe {
+    background-color: #62AC2B;
+    color: #000;
+    /* padding: 0.5em 2em; */
+    border-radius: 5px;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0em;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 18px;
+    /* position: center; */
+    text-align: center;
+    width: 70%;
+
+}
+
+/*
+ * -- LOWER SIGNUP FORM MOBILE --
+ */
+
+#mc-embedded-subscribe-lower {
+    background-color: #f5ea37;
+    color: #000;
+    /* padding: 0.5em 2em; */
+    border-radius: 5px;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: 1%;
+    margin-top: 0em;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 18px;
+    /* position: center; */
+    text-align: center;
+    width: 70%;
+
+}
+
+.hide {
+    display: none;
+}
+
+#mc_embed_signup_lower {
+margin-left: -11%;
+margin-top: -4%;
+}
+
+ /*
+ * -- BOTTOM SIGNUP FORM MOBILE --
+ */
+
+#mc_embed_signup_bottom_title {
+    color: green;
+}
+
+#mc_embed_signup_bottom {
+    display: block;
+}
+
+#fname_bottom {
+    display: block;
+    width: 80%;
+
+}
+
+#email_bottom {
+    display: block;
+    width: 80%;
+}
+
+#submit_bottom {
+    background-color: #62AC2B;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0em;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 18px;
+    /* position: center; */
+    text-align: center;
+    width: 60%;
+}
 
 
 /*
@@ -101,9 +267,23 @@ padding-bottom: 2%;
     font-weight: 300;
 }
 
+.form-ask span {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
 .tell-me-more {
     margin-top: 5%;
     color: #fff;
+}
+
+.more_questions{
+    /*display: inline;*/
+    margin-left: 2%;
+    color: #fff;
+    text-align: center;
+    margin-top: -1%;
 }
 .pure-form label {
     margin: 1em 0 0;
@@ -126,6 +306,7 @@ padding-bottom: 2%;
     width: 100%;
     margin-bottom: 1em;
     padding-bottom: 70px;
+
 }
 
 /*
@@ -211,23 +392,6 @@ a.pure-button-primary.office {
     position: center;
 }
 
-#mc-embedded-subscribe {
-    background-color: #f5ea37;
-    color: #000;
-    /* padding: 0.5em 2em; */
-    border-radius: 5px;
-    padding: 1em;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0em;
-    margin-bottom: 0;
-    font-weight: 800;
-    font-size: 18px;
-    /* position: center; */
-    text-align: center;
-    width: 70%;
-
-}
 
 /*
  * -- MENU STYLES --
@@ -436,8 +600,7 @@ a.pure-button-primary.office {
 }
 
 .container-bottom{
-    padding: 2em;
-}
+margin-top: -2%;}
 /*
  * -- CONTENT STYLES --
  * This represents the content area (everything below the blue section)
@@ -445,7 +608,7 @@ a.pure-button-primary.office {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 120%;
+    top: 84%;
     width: 100%;
     min-height: 12%;
     z-index: 5;
@@ -458,8 +621,11 @@ a.pure-button-primary.office {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin: 1em 0 1em;
+    margin-top: 6%;
+    text-align: center;
 }
+
+
 
 .content-head.office {
     margin: 0em 0em 0em 0em;
@@ -486,6 +652,7 @@ a.pure-button-primary.office {
 
 .ribbon-text {
     color: #fff;
+    text-align: left;
 }
 
 /* This is the class used for the footer */
@@ -497,7 +664,7 @@ a.pure-button-primary.office {
 
 
 /*MEDIA FOR BIGGER DEVICES*/
- @media (min-width: 60em) {
+ @media (min-width: 960px) {
     /* We increase the header font size even more */
 
 * {
@@ -536,14 +703,6 @@ label {
     font-family: 'Lato', sans-serif;
 }
 
-  
-
-
-#mc-embedded-subscribe {
-   
-    width: 40%;
-
-}
 
 .pure-img-responsive {
     max-width: 40%;
@@ -556,8 +715,9 @@ label {
     padding-bottom: 2%
 
   }
-.pure-img-responsive.delivery_truck {
-    margin-top: 0px;
+#delivery_truck {
+    display: block;
+    margin: 0 auto;
     border: none;
 
 }
@@ -571,7 +731,7 @@ label {
 }
 
 .l-box-lrg {
-    padding: 2em;
+    padding: 0 8em 0 8em;
     border-bottom: 0px;
 }
 
@@ -598,7 +758,10 @@ label {
     text-align: center;
 }
 
-
+#saveForm {
+    width: 30%; 
+    padding: 1em;
+}
 
 /*
  * -- PURE FORM STYLES --
@@ -647,41 +810,141 @@ label {
 
 }
 
+/*
+ * -- TOP SIGNUP FORM DESK --
+ */
 .fname {
     display: inline;
     width: 35%
 }
-.email {
+/*.email {
     display: inline;
     width: 65%;
-}
+}*/
 
+
+#mc-embedded-subscribe {
+    background-color: #62AC2B;
+    color: #000;
+    /* padding: 0.5em 2em; */
+    border-radius: 5px;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0em;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 18px;
+    /* position: center; */
+    text-align: center;
+    width: 40%;
+
+}
 
 /*
-#mce-FNAME {
-    width: 25%;
-    display: inline;
+ * -- LOWER SIGNUP FORM DESK --
+ */
+
+.lower-signup-container {
+    background-color: transparent;
+    border-radius: 10px;
+     display: block;
+    border: none;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+   
+    
 }
 
-#mce-EMAIL {
-    display: inline;
-    width: 75%;
-}*/
+#mc_embed_signup_lower {
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 2%;
+   display: inline;
+   margin-bottom:3%;
+   width: 100%; 
+}
 
-/*notify_button {
-    background-color: #fff;  
-    color: #000;
-    padding: 0.5em 2em;
-    border-radius: 5px;
-    padding: 1em 4em 1em 4em;
-    margin-right: 2em;
-    margin-left: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
+#mc_embed_signup_lower_title{
+    color: #f5ea37;
+    text-align: center;
     font-weight: 800;
-    font-size: 22px;
-    position: center;
-}*/
+    font-size: 22px; 
+}
+
+#mc-embedded-subscribe-lower {
+    background-color: #f5ea37;
+    display: inline;
+    color: #000;
+    border-radius: 5px;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-top: 2%;
+   
+
+}
+
+ /*
+ * -- BOTTOM SIGNUP FORM DESK --
+ */
+
+#mc_embed_signup_bottom {
+    border:none;
+    margin-right: auto;
+    margin-left: auto;
+}
+#mc_embed_signup_bottom_title {
+    color: green;
+    text-align: center;
+    font-weight: 800;
+    font-size: 22px; 
+}
+
+#mc_embed_signup_bottom {
+    display: block;
+}
+
+#fname_bottom {
+    display: block;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#email_bottom {
+    display: block;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#submit_bottom {
+    background-color: #62AC2B;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0em;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 18px;
+    /* position: center; */
+    text-align: center;
+    width: 60%;
+}
+
+
+
+
+
 .pure-form input[type].comments {
     border: 2px solid #ddd;
     box-shadow: none;
