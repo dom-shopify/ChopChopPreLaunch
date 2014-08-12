@@ -30,6 +30,10 @@ padding: 0 0 0 0px;
     color: #62ac2b;
 }
 
+p {
+    font-size: 150%;
+}
+
 h1,
 h2,
 h3,
@@ -42,8 +46,15 @@ label {
     font-family: 'Lato', sans-serif;
 }
 
+h3 {
+    margin-top: 3%;
+}
+
 .content-head { text-align: center;}
-.content-head-ribbon { text-align: center;}
+.content-head-ribbon { 
+    text-align: center;
+    margin-top: -3%;
+}
 .ribbon-text { text-align: center;}
 
 
@@ -59,23 +70,18 @@ padding-bottom: 2%;
 
   }
 #delivery_truck {
-    max-width: 100%;
-    /* zoom: 2; */
-    height: auto;
-    margin-top: -5%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    margin-bottom: -10%;
-
+    margin: 0 auto;
+    border: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    max-width: 200%;
 }
 
 #form25 {
     display: block;
     margin: 0 auto;
-    margin-top: 2%;
+    /*margin-top: -4%;*/
 }
 
 /*
@@ -84,10 +90,11 @@ padding-bottom: 2%;
  */
 .l-box {
     padding: 1em;
+    margin: 0 auto;
 }
 
 .l-box-lrg {
-    padding: 2em;
+    padding: 0 3em;
     border-bottom: 0px;
 }
 
@@ -274,8 +281,7 @@ margin-top: -4%;
 }
 
 .tell-me-more {
-    margin-top: 5%;
-    color: #fff;
+    display: none;
 }
 
 .more_questions{
@@ -569,6 +575,7 @@ a.pure-button-primary.office {
     border-radius: 5px;
     line-height: 1em;
     padding-bottom: .5em;
+    font-size: 250%
     /*font-weight: 700;*/
         
     /*padding-top: 2em;
@@ -587,6 +594,7 @@ a.pure-button-primary.office {
     letter-spacing: 0.05em;
    /* opacity: 0.8;*/
     margin: 0em 0;
+    font-size: 100%;
 }
 
 .splash-subhead span {
@@ -608,11 +616,12 @@ margin-top: -2%;}
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 84%;
+    top: 90%;
     width: 100%;
     min-height: 12%;
     z-index: 5;
     background: white;
+    margin-top: 3%;
 
 }
 
@@ -621,7 +630,7 @@ margin-top: -2%;}
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-top: 6%;
+    margin-top: 4%;
     text-align: center;
 }
 
@@ -634,6 +643,7 @@ margin-top: -2%;}
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
     color: white;
+    margin-top: -3%;
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
@@ -652,7 +662,8 @@ margin-top: -2%;}
 
 .ribbon-text {
     color: #fff;
-    text-align: left;
+    text-align: center;
+    padding: 0 4% 0 4%;
 }
 
 /* This is the class used for the footer */
@@ -686,6 +697,9 @@ body {
       
 }
 
+p {
+    font-size: 100%;
+}
 .q_title {
     font-weight: 600;
     color: #62ac2b;
@@ -719,6 +733,8 @@ label {
     display: block;
     margin: 0 auto;
     border: none;
+    margin-top: 10%;
+    max-width: 200%;
 
 }
 
@@ -841,6 +857,11 @@ label {
 
 }
 
+.tell-me-more {
+    margin-top: 5%;
+    color: #fff;
+}
+
 /*
  * -- LOWER SIGNUP FORM DESK --
  */
@@ -942,7 +963,10 @@ label {
 }
 
 
-
+#form25 {
+    margin-top: 2%;
+    margin: 0 auto;
+}
 
 
 .pure-form input[type].comments {
@@ -1324,6 +1348,7 @@ a.pure-button-primary:hover {
     color: white;
     font-size: 26px;
     font-weight: 700;
+    text-align: left;
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
@@ -1344,6 +1369,8 @@ a.pure-button-primary:hover {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
+    text-align: left;
+    padding-right: 10%;
 }
 
 .ribbon-text.home {
@@ -1357,6 +1384,26 @@ a.pure-button-primary:hover {
 /* This is the class used for the footer */
 .footer {
     background: #111;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+
+.l-box-lrg img {
+    display: block;
+    margin: 0 auto;
+}
+
+#delivery_truck {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    min-width: 300px;
+    /*max-width: 200%;*/
 }
 
 }
