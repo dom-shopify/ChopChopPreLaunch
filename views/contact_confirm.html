@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/marketing.css">
+        <link rel="stylesheet" href="../css/layouts/marketing.css">
     <!--<![endif]-->
 
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
@@ -45,128 +45,72 @@
 </head>
 <body>
 
-<div class="header">
+<!-- <div class="header">
     <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed" id="navbar">
-        <img class="pure-img-responsive" alt="Chop Chop Logo"  src="img/common/chop-chop-trans.png"></img>
-
-        <!-- <ul>
-            <li class="pure-menu-selected"><a href="#"></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Office</a></li>
-        </ul> -->
+        <img class="pure-img-responsive" alt="Chop Chop Logo"  src="../img/common/chop-chop-trans.png"></img>
     </div>
-</div>
+</div> -->
 
 <div class="splash-container">
-    <div class="splash">
-        <h1 class="splash-head">Thanks, We'll Be In touch</h1>
-        <p class="splash-subhead">
-            Get tasty organic veggies and fruit delivered to you - Fresh the same day we wash and chop it. </br>
-            <span>No more wasted produce. </span>
-            <button>Share on Facebook</button>
-        </p>
-        <p>
-            <!-- <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                <form class="pure-form pure-form-stacked">
-                    <fieldset>
+     <img class="pure-img-responsive" alt="Chop Chop Logo"  src="../img/common/chop-chop-trans.png"></img>
+    <div class="splash pure-u-1">
+        <div class="pure-g">
+            <div class="pure-u-1">
+        <!-- Begin Talkable integration code -->
+                <script>
+                  //<![CDATA[
+                    var _curebitq = _curebitq || [];
+                    _curebitq.push(['init', {
+                      site_id: 'chop-chop', // REQUIRED - Talkable Site ID
+                      // server: 'https://www.talkable.com' // OPTIONAL - use your own domain, that suppose to be setup as alias to talkable.com (this option is only possible for Enterprise client)
+                    }]);
 
-                        <label for="name">Your Zip</label>
-                        <input id="name" type="text" placeholder="Your Zip">
+                    _curebitq.push(['register_affiliate', {
+                      iframe: { // REQUIRED - html attributes for iframe tag to fit page design
+                        width: '100%', // REQUIRED - width of the iframe
+                        height: 960, // REQUIRED - initial height of the iframe. Will be automatically updated if responsive option is set to true.
+                        // container: "id-example", // OPTIONAL - Tell Talkable where to insert the iframe (ID attribute). See Asynchronous Integration for more details.
+                        id: 'new_curebit_affiliate_member' // OPTIONAL - any other HTML attribute
+                      },
 
-                        <button type="submit" class="pure-button">Sign Up</button>
-                    </fieldset>
-                </form>
-            </div> -->
-            <a href="views/office_delivery.html" class="pure-button pure-button-primary">Office Delivery</a>
-            <a href="views/home_delivery.html" class="pure-button pure-button-primary">Home Delivery</a>
-        </p>
+                      affiliate_member: { // OPTIONAL - Talkable will ask person to signup in case when his email is not given by merchant
+                        email: '', // OPTIONAL - customer email
+                        first_name: '', // OPTIONAL - customer first name
+                        person_custom_properties: { // OPTIONAL - additional customer properties
+                        key1: '', // Numeric value
+                        },
+                        traffic_source: '...' // OPTIONAL - indicate person traffic source. Can be used as segmentation parameter in reporting.
+                      },
+                      responsive: true, // OPTIONAL - fit iframe into viewport (also on resize) and allow Talkable display mobile templates
+                      // device: 'desktop', // OPTIONAL - enforce mobile/tablet/desktop view or skip this to allow Talkable choose corresponding template
+                      campaign_tags: ['default'] // OPTIONAL - campaign tags for offer targeting
+                    }]);
+                  //]]>
+                </script>
+
+<!-- End Talkable integration code -->
+            </div>
+        </div>
     </div>
 </div>
+
 
 <div class="content-wrapper">
     <div class="content">
-        <h2 class="content-head is-center">CHOP CHOP MAKES IT EASY TO EAT THE VEGGIES & FRUIT YOU NEED</h2>
+        <h2 class="content-head is-center">YOU CAN ALSO GET CHOP CHOP TO YOUR OFFICE</h2>
 
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-
-                <h3 class="content-subhead">
-                    <i class="fa fa-leaf [&#xf06c;]"></i>
-                    Organic Produce
-                </h3>
-                <p>
-                    A large selection, all sourced locally when possible.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-hand-o-right [&#xf0a4;]"></i>
-                    Washed the Right Way
-                </h3>
-                <p>
-                    We soak our vegetables in special non-chemical mixtures to ensure cleanliness.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-dot-circle-o [&#xf192;]"></i>
-                    Nicely Diced
-                </h3>
-                <p>
-                    Gloved employees with expert cutting skills chop your order.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-refresh [&#xf021;]"></i>
-                    Compostable Containers
-                </h3>
-                <p>
-                    All packages can be composted which help us in our effort to reduce waste.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="ribbon l-box-lrg pure-g">
-        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-            <img  class="pure-img-responsive delivery_truck" id="delivery_truck"  alt="Delivery Truck" width="300" src="img/common/delivery_truck.png">
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-
-            <h2 class="content-head content-head-ribbon">Delivered Same Day To Your Home or Office</h2>
-
-            <p class="ribbon-text">
-                The same day we chop 'em, we delivery 'em! This keeps the product fresh and ready to enjoy for days to come after we deliver it to you.
-            </p>
+        <button class="pure-button-primary" value="Learn More" href="/views/office_delivery.html">Learn More Now</button> 
         </div>
       
     </div>
-            <div class="l-box-lrg pure-u-1 office">
-                <h3>Popular Answers...</h3>
-                <p>
-                    <span class="q_title">How Much Does CHOP CHOP cost?</span></br>
-                    You'll pay a bit extra compared to just buying organic veggies, but that's because we wash, chop, package and deliver your order for you. We keep a low $25 min order, so you can order a few times per week. </br></br>
-
-                     <span class="q_title">How long does CHOP CHOP take?</span></br>
-                    As long as you order by 10pm, we'll have your order delivered the next day.  Office orders are delivered first and then home deliveries take place in the early evening, but you can choose your delivery windows. </br></br>
-
-                     <span class="q_title">What does CHOP CHOP do with it's unused produce?</span></br>
-                    All produce that isn't used in an order for the day is delivered to a local food shelter to avoid any waste. </br>
-                </p>
-
-            </div>
-        </div>
-
-    </div>
+           
 
     <div class="footer l-box is-center">
         Copyright CHOP CHOP, LLC. 2014
     </div>
 
-</div>
 
+<script src="//d2jjzw81hqbuqv.cloudfront.net/integration/curebit-1.0.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 stickHeader = ->
