@@ -42,6 +42,11 @@
 </script>
 <!-- End Google Analytics -->
 
+<script src="//d2jjzw81hqbuqv.cloudfront.net/integration/curebit-1.0.min.js" type="text/javascript"></script>
+        <!-- Begin Talkable integration code -->
+                
+ 
+<!-- End Talkable integration code --> 
 </head>
 <body>
 
@@ -53,26 +58,25 @@
 
 <div class="splash-container">
      <img class="pure-img-responsive" alt="Chop Chop Logo"  src="../img/common/chop-chop-trans.png"></img>
-    <div class="splash pure-u-1">
-        <div class="pure-g">
-            <div class="pure-u-1">
-        <!-- Begin Talkable integration code -->
-                <script>
-                  //<![CDATA[
+    <div id="curebit_container">
+         <script>
+
+                  <![CDATA[
                     var _curebitq = _curebitq || [];
                     _curebitq.push(['init', {
                       site_id: 'chop-chop', // REQUIRED - Talkable Site ID
-                      // server: 'https://www.talkable.com' // OPTIONAL - use your own domain, that suppose to be setup as alias to talkable.com (this option is only possible for Enterprise client)
+                      server: 'https://www.talkable.com' // OPTIONAL - use your own domain, that suppose to be setup as alias to talkable.com (this option is only possible for Enterprise client)
                     }]);
-
+ 
                     _curebitq.push(['register_affiliate', {
                       iframe: { // REQUIRED - html attributes for iframe tag to fit page design
                         width: '100%', // REQUIRED - width of the iframe
                         height: 960, // REQUIRED - initial height of the iframe. Will be automatically updated if responsive option is set to true.
                         // container: "id-example", // OPTIONAL - Tell Talkable where to insert the iframe (ID attribute). See Asynchronous Integration for more details.
-                        id: 'new_curebit_affiliate_member' // OPTIONAL - any other HTML attribute
+                        id: 'new_curebit_affiliate_member', // OPTIONAL - any other HTML attribute
+                        container: 'curebit-container'
                       },
-
+ 
                       affiliate_member: { // OPTIONAL - Talkable will ask person to signup in case when his email is not given by merchant
                         email: '', // OPTIONAL - customer email
                         first_name: '', // OPTIONAL - customer first name
@@ -85,21 +89,30 @@
                       // device: 'desktop', // OPTIONAL - enforce mobile/tablet/desktop view or skip this to allow Talkable choose corresponding template
                       campaign_tags: ['default'] // OPTIONAL - campaign tags for offer targeting
                     }]);
-                  //]]>
+                 
                 </script>
-
-<!-- End Talkable integration code -->
-            </div>
-        </div>
     </div>
+
 </div>
 
+    <!-- <div class="splash pure-u-1" >
 
-<div class="content-wrapper">
+        <div class="pure-g" >
+
+            <div class="pure-u-1" id="curebit-container">
+            <script>var _curebitq = _curebitq || []; _curebitq.push(['init', { site_id: 'linio-mx' }], ['register_affiliate', { iframe: { width: 960, height: 537 }, responsive: true, campaign_tags: ['deportes7-30'] }]);</script>
+<script src="//d2jjzw81hqbuqv.cloudfront.net/integration/curebit-1.0.min.js" type="text/javascript"></script>
+            </div>
+    </div>
+</div>
+</div> -->
+
+
+<div class="content-wrapper" id="confirm-page-bottom-banner">
     <div class="content">
         <h2 class="content-head is-center">YOU CAN ALSO GET CHOP CHOP TO YOUR OFFICE</h2>
 
-        <button class="pure-button-primary" value="Learn More" href="/views/office_delivery.html">Learn More Now</button> 
+        <button class="pure-button-primary" id="office-learn" value="Learn More" href="/views/office_delivery.html">Learn More Now</button> 
         </div>
       
     </div>
@@ -108,18 +121,6 @@
     <div class="footer l-box is-center">
         Copyright CHOP CHOP, LLC. 2014
     </div>
-
-
-<script src="//d2jjzw81hqbuqv.cloudfront.net/integration/curebit-1.0.min.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-stickHeader = ->
-    if Utils.currentScroll > 12
-      $(".home-menu").addClass "is-sticky"
-    else
-      $(".home-menu").removeClass "is-sticky"
-</script>
-
    
 <!-- Start BounceX tag -->
 <script type="mce-mce-mce-mce-mce-mce-mce-mce-mce-mce-mce-mce-mce-text/javascript">// <![CDATA[
