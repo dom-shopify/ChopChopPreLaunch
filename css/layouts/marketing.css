@@ -50,6 +50,28 @@ h3 {
     margin-top: 3%;
 }
 
+#office-learn {
+    background-color: #62ac2b;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1em 2em;
+    margin-bottom: 3em;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 3em;
+}
+
+#confirm-page-bottom-banner {
+    position: fixed;
+    top: 66%;
+}
+
+#curebit-container {
+    display: block;
+    position: absolute;
+    top: 100px;
+    z-index: 5;
+}
 .content-head { text-align: center;}
 .content-head-ribbon { 
     text-align: center;
