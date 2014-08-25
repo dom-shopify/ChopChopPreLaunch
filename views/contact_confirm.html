@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example that shows off a responsive product landing page.">
+<meta name="description" content="Chop Chop helps you eat healthy by delivering cut to order organic produce.">
+
 
     <title>CHOP CHOP &ndash; Fresh Organic Fruits and Veggies Delivered</title>
 
@@ -28,6 +29,7 @@
     <!--<![endif]-->
 
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="icon" type="image/png" href="img/common/favicon.png">
 
 <!-- Start Google Analytics -->
 <script>
@@ -42,38 +44,8 @@
 </script>
 <!-- End Google Analytics -->
 
-<script src="http://d2jjzw81hqbuqv.cloudfront.net/integration/curebit-1.0.min.js" type="text/javascript"></script>
-<!-- <script src="//d2jjzw81hqbuqv.cloudfront.net/integration/curebit-1.0.min.js" type="text/javascript"></script> -->
-<script>
-  var _curebitq = _curebitq || [];
-  _curebitq.push(['init', {
-    site_id: 'chop-chop', // REQUIRED - Talkable Site ID
-    server: 'https://www.talkable.com' // OPTIONAL - use your own domain, that suppose to be setup as alias to talkable.com (this option is only possible for Enterprise client)
-  }]);
 
-  _curebitq.push(['register_affiliate', {
-    iframe: { // REQUIRED - html attributes for iframe tag to fit page design
-      width: '100%', // REQUIRED - width of the iframe
-      height: 960, // REQUIRED - initial height of the iframe. Will be automatically updated if responsive option is set to true.
-      // container: "id-example", // OPTIONAL - Tell Talkable where to insert the iframe (ID attribute). See Asynchronous Integration for more details.
-      id: 'new_curebit_affiliate_member', // OPTIONAL - any other HTML attribute
-      container: 'curebit_container'
-    },
 
-    affiliate_member: { // OPTIONAL - Talkable will ask person to signup in case when his email is not given by merchant
-      email: '', // OPTIONAL - customer email
-      first_name: '', // OPTIONAL - customer first name
-      person_custom_properties: { // OPTIONAL - additional customer properties
-      key1: '', // Numeric value
-      },
-      traffic_source: '...' // OPTIONAL - indicate person traffic source. Can be used as segmentation parameter in reporting.
-    },
-    responsive: true, // OPTIONAL - fit iframe into viewport (also on resize) and allow Talkable display mobile templates
-    // device: 'desktop', // OPTIONAL - enforce mobile/tablet/desktop view or skip this to allow Talkable choose corresponding template
-    campaign_tags: ['default'] // OPTIONAL - campaign tags for offer targeting
-  }]);
-
-</script>
 
 </head>
 <body>
@@ -82,9 +54,41 @@
     <img class="pure-img-responsive" alt="Chop Chop Logo" src="../img/common/chop-chop-trans.png">
     <div class="splash pure-g">
         <div class"pure-u-1" id="curebit_container">
+          <script>
+            var _curebitq = _curebitq || [];
+            _curebitq.push(['init', {
+              site_id: 'chop-chop', // REQUIRED - Talkable Site ID
+              server: 'https://www.talkable.com' // OPTIONAL - use your own domain, that suppose to be setup as alias to talkable.com (this option is only possible for Enterprise client)
+            }]);
+
+            _curebitq.push(['register_affiliate', {
+              iframe: { // REQUIRED - html attributes for iframe tag to fit page design
+                width: '100%', // REQUIRED - width of the iframe
+                height: 960, // REQUIRED - initial height of the iframe. Will be automatically updated if responsive option is set to true.
+                // container: "id-example", // OPTIONAL - Tell Talkable where to insert the iframe (ID attribute). See Asynchronous Integration for more details.
+                id: 'new_curebit_affiliate_member', // OPTIONAL - any other HTML attribute
+                container: 'curebit_container'
+              },
+
+              affiliate_member: { // OPTIONAL - Talkable will ask person to signup in case when his email is not given by merchant
+                email: '', // OPTIONAL - customer email
+                first_name: '', // OPTIONAL - customer first name
+                person_custom_properties: { // OPTIONAL - additional customer properties
+                key1: '', // Numeric value
+                },
+                traffic_source: '...' // OPTIONAL - indicate person traffic source. Can be used as segmentation parameter in reporting.
+              },
+              responsive: true, // OPTIONAL - fit iframe into viewport (also on resize) and allow Talkable display mobile templates
+              // device: 'desktop', // OPTIONAL - enforce mobile/tablet/desktop view or skip this to allow Talkable choose corresponding template
+              campaign_tags: ['default'] // OPTIONAL - campaign tags for offer targeting
+            }]);
+          </script>
+          <script src="//d2jjzw81hqbuqv.cloudfront.net/integration/curebit-1.0.min.js" type="text/javascript"></script>
         </div>
     </div>
 </div>
+
+
 
 
 <div class="footer">
